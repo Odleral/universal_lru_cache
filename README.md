@@ -14,10 +14,10 @@
 Получение нового кеша.
 ```go
     cache := app.NewLRUCache(WithTTL(2 * time.Second), WithCapacity(100))
-	cache.Add("e1", 3.14)
-	cache.Add("e2", 67)
-	cache.Add("user:1", "some text")
-	fmt.Println(cache.Get("e1"))
+    cache.Add("e1", 3.14)
+    cache.Add("e2", 67)
+    cache.Add("user:1", "some text")
+    fmt.Println(cache.Get("e1"))
     fmt.Println(cache.Get("user"))
 ```
 ## Тестирование
