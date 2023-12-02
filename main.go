@@ -8,10 +8,13 @@ import (
 
 func main() {
 	cache := app.NewLRUCache(app.WithTTL(2*time.Second), app.WithCapacity(100))
-	cache.Add("f", 1)
-	cache.Add("a", 11)
+	cache.Add("e1", 3.14)
+	cache.Add("e2", 67)
+	cache.Add("user:1", "some text")
+	fmt.Println(cache.Get("e1"))
+	fmt.Println(cache.Get("user:1"))
 
-	fmt.Println(cache.Get("f"))
-	time.Sleep(6 * time.Second)
-	fmt.Println(cache.Get("a"))
+	time.Sleep(2 * time.Second)
+
+	fmt.Println(cache.Get("e2"))
 }
