@@ -1,0 +1,10 @@
+github.com/Odleral/universal_lru_cache/app/cache.go:20:	WithTTL		100.0%
+github.com/Odleral/universal_lru_cache/app/cache.go:24:	WithCapacity	100.0%
+github.com/Odleral/universal_lru_cache/app/cache.go:29:	NewLRUCache	90.0%
+github.com/Odleral/universal_lru_cache/app/cache.go:49:	Add		90.9%
+github.com/Odleral/universal_lru_cache/app/cache.go:67:	Get		64.3%
+github.com/Odleral/universal_lru_cache/app/list.go:21:	NewList		100.0%
+github.com/Odleral/universal_lru_cache/app/list.go:35:	Append		100.0%
+github.com/Odleral/universal_lru_cache/app/list.go:49:	Pop		100.0%
+github.com/Odleral/universal_lru_cache/app/list.go:53:	Remove		100.0%
+total:							(statements)	87.0%

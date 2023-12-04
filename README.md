@@ -1,6 +1,6 @@
 # Универсальный LRU кэш
-
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]()
+![Coverage](https://img.shields.io/badge/Coverage-87.0%25-brightgreen)
+[![Build Status](https://github.com/Odleral/universal_lru_cache/actions/workflows/go.yml/badge.svg)]()
 
 Универсальный LRU кэш с регулируемой TTL и размером. Покрыт тестами и тестами производительности и потребления памяти.
 
