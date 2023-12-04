@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        go-version: [ '1.19', '1.20', '1.21.x' ]
+        go-version: [ '1.21.3' ]
     steps:
       - uses: actions/checkout@v4
       - name: Setup Go ${{ matrix.go-version }}
@@ -30,4 +30,4 @@ jobs:
         run: go build -v main.go
 
       - name: Test
-        run: go test -v -json > TestResult-${{matrix.go-version}}.json ./app/...
+        run: go test -v -json > test/TestResult-${{matrix.go-version}}.json ./app/...
