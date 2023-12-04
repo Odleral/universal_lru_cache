@@ -11,7 +11,9 @@
 
 ## Использование
 
-Получение нового кеша.
+- Получение нового кэша ```cache := app.NewLRUCache(params ...interface{})```
+- Добавление нового элемента в кэш ```cache.Add(key string, value any)```
+- Получение элемента из кэша ```val, ok := cache.Get(key string)```
 ```go
 cache := app.NewLRUCache(app.WithTTL(2*time.Second), app.WithCapacity(100))
 cache.Add("e1", 3.14)
@@ -29,6 +31,13 @@ fmt.Println(cache.Get("e2"))
 //some text true
 //<nil> false
 ```
+
+Доступные параметры функции NewLRUCache. Данные параметры указывать не обязательно.
+```go
+  WithTTL(time.Duration)    // Устанавливает время жизни для элементов кэша
+  WithCapacity(int)         // Устанавливает размер кэша
+``` 
+
 ## Тестирование
 ```sh
 # тестирование 
